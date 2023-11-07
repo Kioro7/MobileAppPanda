@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary"
+    tools:context=".ui.tariffPlans.TariffPlansFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="@color/primary"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="8sp"
+            android:text="@string/tariff_plans_text1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="7sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="8sp"
+                    android:text="@string/homeText6"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10sp"
+                        android:paddingTop="5sp"
+                        android:paddingRight="25sp">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="@string/tarifHomeText1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/tarifHomeText2"
+                            android:textAlignment="center"
+                            android:textColor="@color/textTarif"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/tarifHomeText3"
+                            android:textAlignment="center"
+                            android:textColor="@color/textTarif"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="10sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/tarifHomeText4"
+                            android:textAlignment="center"
+                            android:textColor="@color/textTarif"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:padding="8sp"
+                        android:rotation="45"
+                        android:text="@string/tarifHomeText5"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="@color/primary"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="8sp"
+            android:text="@string/tariff_plans_text2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="7sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tariff1"
+                        android:layout_width="0sp"
+                        android:layout_weight="60"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginVertical="10sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/tariff_plans_text11"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tarifCost1"
+                        android:layout_width="0sp"
+                        android:layout_weight="40"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10sp"
+                        android:text="@string/tariff_plans_text12"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="7sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tariff2"
+                        android:layout_width="0sp"
+                        android:layout_weight="60"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginVertical="10sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/tariff_plans_text21"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tarifCost2"
+                        android:layout_width="0sp"
+                        android:layout_weight="40"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10sp"
+                        android:text="@string/tariff_plans_text22"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="7sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tariff3"
+                        android:layout_width="0sp"
+                        android:layout_weight="60"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginVertical="10sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/tariff_plans_text31"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tarifCost3"
+                        android:layout_width="0sp"
+                        android:layout_weight="40"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10sp"
+                        android:text="@string/tariff_plans_text32"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="7sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tariff4"
+                        android:layout_width="0sp"
+                        android:layout_weight="60"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginVertical="10sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/tariff_plans_text41"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/line4"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"></View>
+
+                    <TextView
+                        android:id="@+id/tarifCost4"
+                        android:layout_width="0sp"
+                        android:layout_weight="40"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10sp"
+                        android:text="@string/tariff_plans_text42"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

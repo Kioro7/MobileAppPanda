@@ -1,0 +1,70 @@
+<resources>
+    <!-- Текстовые поля окна авторизации -->
+    <string name="app_name">Panda</string>
+    <string name="text1">ВХОД В ЛИЧНЫЙ КАБИНЕТ</string>
+    <string name="text2">Электронная почта:</string>
+    <string name="hintText2">Введите электронная почту</string>
+    <string name="text3">Пароль:</string>
+    <string name="hintText3">Введите пароль</string>
+    <string name="btnEnter">Войти</string>
+    <string name="textViewReg">Регистрация</string>
+
+    <!-- Текстовые поля окна регистрации -->
+    <string name="regText1">РЕГИСТРАЦИЯ В ЛИЧНОМ КАБИНЕТЕ</string>
+    <string name="regText2">Подтверждение пароля:</string>
+    <string name="regBtnEnter">Регистрация</string>
+    <string name="regTextViewReg">Авторизация</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!-- Текстовые поля главного окна -->
+    <string name="homeText1">Оператор связи &quot;Панда&quot; - это</string>
+    <string name="homeText2">Выгодные тарифы</string>
+    <string name="homeText3">Еще...</string>
+    <string name="homeText4">Множество бесплатных услуг</string>
+    <string name="homeText5">Поддержка каждого клиента связи</string>
+    <string name="homeText6">Тариф "Все или ничего"</string>
+    <string name="tarifHomeText1">Безлимит</string>
+    <string name="tarifHomeText2">-на звонки</string>
+    <string name="tarifHomeText3">-на мобильный интернет</string>
+    <string name="tarifHomeText4">-на сообщения</string>
+    <string name="tarifHomeText5">3000 &#8381;/мес.</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Текстовые поля меню -->
+    <string name="menu_panda">ПАНДА</string>
+    <string name="menu_home">Главная</string>
+    <string name="menu_tariffPlans">Тарифные пакеты</string>
+    <string name="menu_tariffControl">Управление тарифом</string>
+    <string name="menu_profile">Мой профиль</string>
+    <string name="menu_exit">Выход</string>
+
+    <!-- Текстовые поля окна тарифных пакетов -->
+    <string name="tariff_plans_text1">Тариф месяца</string>
+    <string name="tariff_plans_text2">Рекомендуемые тарифы</string>
+    <string name="tariff_plans_text11">Тариф &quot;Разговорный&quot;</string>
+    <string name="tariff_plans_text12">1210 &#8381;/мес.</string>
+    <string name="tariff_plans_text21">Тариф &quot;Интроверт&quot;</string>
+    <string name="tariff_plans_text22">560 &#8381;/мес.</string>
+    <string name="tariff_plans_text31">Тариф &quot;Хакер&quot;</string>
+    <string name="tariff_plans_text32">1590 &#8381;/мес.</string>
+    <string name="tariff_plans_text41">Тариф &quot;Для всех и каждого&quot;</string>
+    <string name="tariff_plans_text42">750 &#8381;/мес.</string>
+</resources>
