@@ -1,7 +1,11 @@
 package com.example.mobileapppanda
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -12,6 +16,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mobileapppanda.databinding.ActivityMainBinding
+import com.example.mobileapppanda.ui.home.HomeFragment
+import com.example.mobileapppanda.ui.tariffPlans.TariffPlansFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +44,11 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val goToTariffPlans : TextView = findViewById(R.id.goToTariffPlans)
+        goToTariffPlans.setOnClickListener {
+            supportFragmentManager.beginTransaction().add(R.id.main_home, TariffPlansFragment(), "TariffPlans").commit()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -49,5 +60,13 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    override fun onBackPressed() {
+        val curFragment = supportFragmentManager.findFragmentByTag("TariffPlans")
+        println(curFragment)
+        if (curFragment != null && curFragment.isVisible())
+            supportFragmentManager.beginTransaction().remove(curFragment).commit()
+        else super.onBackPressed()
     }
 }
