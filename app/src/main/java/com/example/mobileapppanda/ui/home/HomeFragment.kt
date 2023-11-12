@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.example.mobileapppanda.MainActivity
 import com.example.mobileapppanda.R
 import com.example.mobileapppanda.databinding.FragmentHomeBinding
+import com.example.mobileapppanda.ui.tariffPlans.TariffPlansFragment
 
 class HomeFragment : Fragment() {
 
@@ -38,4 +40,13 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+//    fun goToTariffPlans(view: View) {
+//        val textView = view.findViewById<View>(R.id.goToTariffPlans)
+//        textView.setOnClickListener {
+//            val fragment = TariffPlansFragment()
+//            val transaction = fragmentManager?.beginTransaction()
+//            transaction?.replace(R.id.nav_tariffPlans, fragment)?.commit()
+//        }
+//    }
 }

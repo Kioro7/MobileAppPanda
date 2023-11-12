@@ -67,4 +67,24 @@
     <string name="tariff_plans_text32">1590 &#8381;/мес.</string>
     <string name="tariff_plans_text41">Тариф &quot;Для всех и каждого&quot;</string>
     <string name="tariff_plans_text42">750 &#8381;/мес.</string>
+
+    <string name="tariff_control_text1">Мой баланс</string>
+    <string name="tariff_control_text2">12540 &#8381;</string>
+    <string name="tariff_control_text3">Пополнить</string>
+    <string name="tariff_control_text4">Мои тарифы</string>
+
+    <string name="profile_text1">Основная информация</string>
+    <string name="profile_text21">Фамилия:</string>
+    <string name="profile_text22">Замыцкий</string>
+    <string name="profile_text31">Имя:</string>
+    <string name="profile_text32">Илья</string>
+    <string name="profile_text41">Отчество:</string>
+    <string name="profile_text42">Сергеевич</string>
+    <string name="profile_text51">Возраст:</string>
+    <string name="profile_text52">21</string>
+    <string name="profile_text61">Номер телефона:</string>
+    <string name="profile_text62">+7 900 876–54-32</string>
+    <string name="profile_text71">Электронная почта:</string>
+    <string name="profile_text72">ilya.zamytskiy@mail.ru</string>
+    <string name="profile_btn">Редактировать данные</string>
 </resources>
