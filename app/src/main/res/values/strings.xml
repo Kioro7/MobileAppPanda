@@ -76,15 +76,22 @@
     <string name="profile_text1">Основная информация</string>
     <string name="profile_text21">Фамилия:</string>
     <string name="profile_text22">Замыцкий</string>
+    <string name="profile_text23">Введите фамилию</string>
     <string name="profile_text31">Имя:</string>
     <string name="profile_text32">Илья</string>
+    <string name="profile_text33">Введите имя</string>
     <string name="profile_text41">Отчество:</string>
     <string name="profile_text42">Сергеевич</string>
+    <string name="profile_text43">Введите отчество</string>
     <string name="profile_text51">Возраст:</string>
     <string name="profile_text52">21</string>
+    <string name="profile_text53">Введите возраст</string>
     <string name="profile_text61">Номер телефона:</string>
-    <string name="profile_text62">+7 900 876–54-32</string>
+    <string name="profile_text62">79008765432</string>
+    <string name="profile_text63">Введите номе телефона</string>
     <string name="profile_text71">Электронная почта:</string>
     <string name="profile_text72">ilya.zamytskiy@mail.ru</string>
+    <string name="profile_text73">Введите адрес электронной почты</string>
     <string name="profile_btn">Редактировать данные</string>
+    <string name="form_title">Редактор личной информации</string>
 </resources>

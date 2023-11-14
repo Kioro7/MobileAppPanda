@@ -1,10 +1,14 @@
 package com.example.mobileapppanda
 
+import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -15,6 +19,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.DialogFragment
 import com.example.mobileapppanda.databinding.ActivityMainBinding
 import com.example.mobileapppanda.ui.home.HomeFragment
 import com.example.mobileapppanda.ui.tariffPlans.TariffPlansFragment
@@ -39,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_tariffPlans, R.id.nav_slideshow, R.id.nav_profile
+                R.id.nav_home, R.id.nav_tariffPlans, R.id.nav_slideshow, R.id.nav_profile, R.id.nav_exit
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -69,4 +74,13 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().remove(curFragment).commit()
         else super.onBackPressed()
     }
+
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        val id = item.itemId
+//        println(item)
+//        if (id == R.id.nav_exit) {
+//            println("Check exit!!!")
+//        }
+//        return super.onOptionsItemSelected(item)
+//    }
 }

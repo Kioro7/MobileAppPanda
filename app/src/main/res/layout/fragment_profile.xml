@@ -57,6 +57,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvName1"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="60"
@@ -84,6 +85,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvName2"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="60"
@@ -111,6 +113,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvName3"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="60"
@@ -138,6 +141,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvAge"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="60"
@@ -165,13 +169,15 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvTelephone"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="60"
                     android:fontFamily="@font/roboto_medium"
                     android:text="@string/profile_text62"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:inputType="phone"/>
 
             </LinearLayout>
 
@@ -192,6 +198,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvEmail"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="60"
@@ -202,19 +209,21 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="70sp"
-                android:layout_marginTop="30sp"
-                android:layout_marginBottom="30sp"
-                android:backgroundTint="@color/primary"
-                android:fontFamily="@font/roboto_bold"
-                android:text="@string/profile_btn"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                <Button
+                    android:id="@+id/show_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:backgroundTint="@color/primary"
+                    android:background="@drawable/btn_radius"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/profile_btn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
 
         </LinearLayout>
     </FrameLayout>
