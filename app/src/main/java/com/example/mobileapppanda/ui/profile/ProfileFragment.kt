@@ -1,32 +1,27 @@
 package com.example.mobileapppanda.ui.profile
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.telephony.PhoneNumberFormattingTextWatcher
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.mobileapppanda.R
 
 class ProfileFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = ProfileFragment()
-    }
-
-    private lateinit var viewModel: ProfileViewModel
-
+    @SuppressLint("InflateParams")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        ViewModelProvider(this)[ProfileViewModel::class.java]
 
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
@@ -62,12 +57,12 @@ class ProfileFragment : Fragment() {
 
             val btnSaveUserData: Button = dialogForm.findViewById(R.id.btn_save_user_data)
             btnSaveUserData.setOnClickListener {
-                tvName1.setText(etNameField1.text)
-                tvName2.setText(etNameField2.text)
-                tvName3.setText(etNameField3.text)
-                tvAge.setText(etAgeField.text)
-                tvTelephone.setText(etTelephoneField.text)
-                tvEmail.setText(etEmailField.text)
+                tvName1.text = etNameField1.text
+                tvName2.text = etNameField2.text
+                tvName3.text = etNameField3.text
+                tvAge.text = etAgeField.text
+                tvTelephone.text = etTelephoneField.text
+                tvEmail.text = etEmailField.text
 
                 dialogForm.dismiss()
             }
@@ -75,11 +70,4 @@ class ProfileFragment : Fragment() {
 
         return view
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
 }

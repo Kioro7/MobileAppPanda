@@ -21,7 +21,7 @@ class TariffControlFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        ViewModelProvider(this).get(TariffControlViewModel::class.java)
+        ViewModelProvider(this)[TariffControlViewModel::class.java]
 
         _binding = FragmentTariffControlBinding.inflate(inflater, container, false)
         val root: View = binding.root

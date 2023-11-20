@@ -47,9 +47,10 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         val curFragment = supportFragmentManager.findFragmentByTag("TariffPlans")
-        if (curFragment != null && curFragment.isVisible())
+        if (curFragment != null && curFragment.isVisible)
             supportFragmentManager.beginTransaction().remove(curFragment).commit()
         else super.onBackPressed()
     }

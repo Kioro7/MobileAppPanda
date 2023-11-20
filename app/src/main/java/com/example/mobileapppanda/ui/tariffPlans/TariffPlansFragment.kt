@@ -1,5 +1,6 @@
 package com.example.mobileapppanda.ui.tariffPlans
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -8,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -23,13 +23,13 @@ class TariffPlansFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    @SuppressLint("InflateParams")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val tariffPlansViewModel =
-            ViewModelProvider(this).get(TariffPlansViewModel::class.java)
+        ViewModelProvider(this)[TariffPlansViewModel::class.java]
 
         _binding = FragmentTariffPlansBinding.inflate(inflater, container, false)
         val root: View = binding.root
