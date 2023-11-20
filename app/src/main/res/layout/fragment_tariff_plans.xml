@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tarifPlans"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondary"
-    tools:context=".ui.tariffPlans.TariffPlansFragment"
-    android:id="@+id/tarifPlans">
+    tools:context=".ui.tariffPlans.TariffPlansFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
             android:textSize="18sp" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/show_tariff1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10sp"
@@ -120,9 +121,9 @@
                         android:id="@+id/textView13"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:fontFamily="@font/roboto_bold"
                         android:gravity="center"
-                        android:layout_gravity="center"
                         android:padding="8sp"
                         android:rotation="45"
                         android:text="@string/tarifHomeText5"
@@ -149,6 +150,7 @@
             android:textSize="18sp" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/show_tariff2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10sp"
@@ -169,14 +171,14 @@
                     <TextView
                         android:id="@+id/tariff1"
                         android:layout_width="0sp"
-                        android:layout_weight="60"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:layout_marginHorizontal="15sp"
                         android:layout_marginVertical="10sp"
-                        android:textAlignment="center"
+                        android:layout_weight="60"
                         android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text11"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -189,12 +191,12 @@
                     <TextView
                         android:id="@+id/tarifCost1"
                         android:layout_width="0sp"
-                        android:layout_weight="40"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:layout_marginVertical="10sp"
+                        android:layout_weight="40"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text12"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -206,6 +208,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/show_tariff3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10sp"
@@ -226,14 +229,14 @@
                     <TextView
                         android:id="@+id/tariff2"
                         android:layout_width="0sp"
-                        android:layout_weight="60"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:layout_marginHorizontal="15sp"
                         android:layout_marginVertical="10sp"
-                        android:textAlignment="center"
+                        android:layout_weight="60"
                         android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text21"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -246,12 +249,12 @@
                     <TextView
                         android:id="@+id/tarifCost2"
                         android:layout_width="0sp"
-                        android:layout_weight="40"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:layout_marginVertical="10sp"
+                        android:layout_weight="40"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text22"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -263,6 +266,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/show_tariff4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10sp"
@@ -283,14 +287,14 @@
                     <TextView
                         android:id="@+id/tariff3"
                         android:layout_width="0sp"
-                        android:layout_weight="60"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:layout_marginHorizontal="15sp"
                         android:layout_marginVertical="10sp"
-                        android:textAlignment="center"
+                        android:layout_weight="60"
                         android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text31"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -303,12 +307,12 @@
                     <TextView
                         android:id="@+id/tarifCost3"
                         android:layout_width="0sp"
-                        android:layout_weight="40"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:layout_marginVertical="10sp"
+                        android:layout_weight="40"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text32"
                         android:textAlignment="center"
                         android:textColor="@color/black"
@@ -320,6 +324,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/show_tariff5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10sp"
@@ -340,14 +345,14 @@
                     <TextView
                         android:id="@+id/tariff4"
                         android:layout_width="0sp"
-                        android:layout_weight="60"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:layout_marginHorizontal="15sp"
                         android:layout_marginVertical="10sp"
-                        android:textAlignment="center"
+                        android:layout_weight="60"
                         android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text41"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -360,12 +365,12 @@
                     <TextView
                         android:id="@+id/tarifCost4"
                         android:layout_width="0sp"
-                        android:layout_weight="40"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
-                        android:gravity="center"
                         android:layout_gravity="center"
                         android:layout_marginVertical="10sp"
+                        android:layout_weight="40"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
                         android:text="@string/tariff_plans_text42"
                         android:textAlignment="center"
                         android:textColor="@color/black"

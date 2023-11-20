@@ -94,4 +94,48 @@
     <string name="profile_text73">Введите адрес электронной почты</string>
     <string name="profile_btn">Редактировать данные</string>
     <string name="form_title">Редактор личной информации</string>
+
+    <string name="dialog_tariff1_text1">Тариф &quot;Все или ничего&quot;</string>
+    <string name="dialog_tariff1_text2">Коротко о тарифе</string>
+    <string name="dialog_tariff1_text3">-Безлимит на звонки</string>
+    <string name="dialog_tariff1_text4">-Безлимит на мобильный интернет</string>
+    <string name="dialog_tariff1_text5">-Безлимит на сообщения</string>
+    <string name="dialog_tariff1_text6">-Подписка на Яндекс Плюс</string>
+    <string name="dialog_tariff1_text7">-Подписка на Telegram Premium</string>
+    <string name="dialog_tariff1_btn1">Купить всего за 3000 &#8381;/мес.</string>
+
+    <string name="dialog_tariff2_text1">Тариф &quot;Разговорный&quot;</string>
+    <string name="dialog_tariff2_text2">Коротко о тарифе</string>
+    <string name="dialog_tariff2_text3">-800 минут на звонки внутри сети</string>
+    <string name="dialog_tariff2_text4">-300 минут на звонки в други сети</string>
+    <string name="dialog_tariff2_text5">-2ГБ мобильного интернета</string>
+    <string name="dialog_tariff2_text6">-150 сообщений</string>
+    <string name="dialog_tariff2_text7">-Использование ВКонтакте и Telegram без расходования интернет-трафика</string>
+    <string name="dialog_tariff2_btn1">Купить всего за 1210 &#8381;/мес.</string>
+
+    <string name="dialog_tariff3_text1">Тариф &quot;Интроверт&quot;</string>
+    <string name="dialog_tariff3_text2">Коротко о тарифе</string>
+    <string name="dialog_tariff3_text3">-100 минут на звонки внутри сети</string>
+    <string name="dialog_tariff3_text4">-50 минут на звонки в други сети</string>
+    <string name="dialog_tariff3_text5">-1ГБ мобильного интернета</string>
+    <string name="dialog_tariff3_text6">-50 сообщений</string>
+    <string name="dialog_tariff3_text7">-Использование WhatsApp и Viber без расходования интернет-трафика</string>
+    <string name="dialog_tariff3_btn1">Купить всего за 560 &#8381;/мес.</string>
+
+    <string name="dialog_tariff4_text1">Тариф &quot;Хакер&quot;</string>
+    <string name="dialog_tariff4_text2">Коротко о тарифе</string>
+    <string name="dialog_tariff4_text3">-200 минут на звонки внутри сети</string>
+    <string name="dialog_tariff4_text4">-100 минут на звонки в други сети</string>
+    <string name="dialog_tariff4_text5">-50ГБ мобильного интернета</string>
+    <string name="dialog_tariff4_text6">-50 сообщений</string>
+    <string name="dialog_tariff4_text7">-Использование Telegram без расходования интернет-трафика</string>
+    <string name="dialog_tariff4_btn1">Купить всего за 1590 &#8381;/мес.</string>
+
+    <string name="dialog_tariff5_text1">Тариф &quot;Для всех и каждого&quot;</string>
+    <string name="dialog_tariff5_text2">Коротко о тарифе</string>
+    <string name="dialog_tariff5_text3">-500 минут на звонки внутри сети</string>
+    <string name="dialog_tariff5_text4">-200 минут на звонки в други сети</string>
+    <string name="dialog_tariff5_text5">-20ГБ мобильного интернета</string>
+    <string name="dialog_tariff5_text6">-100 сообщений</string>
+    <string name="dialog_tariff5_btn1">Купить всего за 750 &#8381;/мес.</string>
 </resources>

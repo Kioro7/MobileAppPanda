@@ -44,16 +44,15 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_tariffPlans, R.id.nav_slideshow, R.id.nav_profile, R.id.nav_exit
+                R.id.nav_home,
+                R.id.nav_tariffPlans,
+                R.id.nav_slideshow,
+                R.id.nav_profile,
+                R.id.nav_exit
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        val goToTariffPlans : TextView = findViewById(R.id.goToTariffPlans)
-        goToTariffPlans.setOnClickListener {
-            supportFragmentManager.beginTransaction().add(R.id.main_home, TariffPlansFragment(), "TariffPlans").commit()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -69,18 +68,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         val curFragment = supportFragmentManager.findFragmentByTag("TariffPlans")
-        println(curFragment)
         if (curFragment != null && curFragment.isVisible())
             supportFragmentManager.beginTransaction().remove(curFragment).commit()
         else super.onBackPressed()
     }
-
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        val id = item.itemId
-//        println(item)
-//        if (id == R.id.nav_exit) {
-//            println("Check exit!!!")
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
 }

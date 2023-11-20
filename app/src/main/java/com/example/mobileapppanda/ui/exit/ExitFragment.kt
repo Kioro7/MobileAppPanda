@@ -20,7 +20,11 @@ class ExitFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_exit, container, false)
+        val view = inflater.inflate(R.layout.fragment_exit, container, false)
+
+        
+
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
