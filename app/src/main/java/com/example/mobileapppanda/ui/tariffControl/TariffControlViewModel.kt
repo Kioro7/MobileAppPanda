@@ -1,10 +1,10 @@
-package com.example.mobileapppanda.ui.slideshow
+package com.example.mobileapppanda.ui.tariffControl
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class TariffControlViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is slideshow Fragment"

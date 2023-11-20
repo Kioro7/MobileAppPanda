@@ -11,7 +11,7 @@
             android:id="@+id/nav_tariffPlans"
             android:title="@string/menu_tariffPlans" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_tariffControl"
             android:title="@string/menu_tariffControl" />
         <item
             android:id="@+id/nav_profile"

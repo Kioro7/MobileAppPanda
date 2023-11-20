@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_tariff_plans" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.mobileapppanda.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_tariffControl"
+        android:name="com.example.mobileapppanda.ui.tariffControl.TariffControlFragment"
         android:label="@string/menu_tariffControl"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_tariff_control" />
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.mobileapppanda.ui.profile.ProfileFragment"
