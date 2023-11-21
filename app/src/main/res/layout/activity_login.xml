@@ -2,16 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity"
     android:background="@color/primary"
-    android:id="@+id/container">
+    android:theme="@style/Theme.MobileAppPanda"
+    tools:context=".LoginActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="150sp"
+        android:layout_height="180sp"
         android:layout_marginTop="40sp"
         android:src="@drawable/panda"
         app:civ_border_color="#00000000"
@@ -21,9 +22,9 @@
         android:id="@+id/form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/secondary"
         android:layout_marginHorizontal="30sp"
-        android:layout_marginTop="230sp"
+        android:layout_marginTop="250sp"
+        android:background="@color/secondary"
         app:cardCornerRadius="15sp">
 
         <LinearLayout
@@ -47,15 +48,16 @@
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="3sp"
-                android:background="@color/black"/>
+                android:background="@color/black"
+                tools:ignore="SmallSp" />
 
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="30sp"
                 android:layout_marginBottom="10sp"
-                android:layout_marginLeft="30sp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/text2"
                 android:textColor="@color/black"
@@ -65,24 +67,26 @@
                 android:id="@+id/text2Form"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
                 android:layout_marginBottom="20sp"
                 android:background="@color/secondary"
-                app:cardCornerRadius="10sp"
                 app:cardBackgroundColor="@color/textField"
-                android:layout_marginHorizontal="30sp">
+                app:cardCornerRadius="10sp">
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:text="ilzam@mail.ru"
+                    android:id="@+id/editTextEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8sp"
+                    android:autofillHints=""
+                    android:background="@null"
                     android:ems="10"
-                    android:textSize="18sp"
                     android:fontFamily="@font/roboto_medium"
-                    android:textColor="@color/textInField"
-                    android:inputType="textEmailAddress"
                     android:hint="@string/hintText2"
-                    android:background="@null"/>
+                    android:inputType="textEmailAddress"
+                    android:padding="8sp"
+                    android:textColor="@color/textInField"
+                    android:textSize="18sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -91,8 +95,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10sp"
+                android:layout_marginStart="20sp"
                 android:layout_marginTop="30sp"
-                android:layout_marginLeft="30sp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/text3"
                 android:textColor="@color/black"
@@ -102,48 +106,54 @@
                 android:id="@+id/text3Form"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
                 android:background="@color/secondary"
-                app:cardCornerRadius="10sp"
                 app:cardBackgroundColor="@color/textField"
-                android:layout_marginHorizontal="30sp">
+                app:cardCornerRadius="10sp">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:text="Aa123456!"
+                    android:id="@+id/editTextPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8sp"
+                    android:autofillHints=""
+                    android:background="@null"
                     android:ems="10"
-                    android:textSize="18sp"
                     android:fontFamily="@font/roboto_medium"
-                    android:textColor="@color/textInField"
-                    android:inputType="textPassword"
                     android:hint="@string/hintText3"
-                    android:background="@null"/>
+                    android:inputType="textPassword"
+                    android:padding="8sp"
+                    android:textColor="@color/textInField"
+                    android:textSize="18sp" />
 
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnEnterApp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="90sp"
+                android:layout_marginTop="40sp"
+                android:backgroundTint="@color/primary"
                 android:text="@string/btnEnter"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/primary"
-                android:layout_marginTop="50sp"
-                android:layout_marginHorizontal="90sp"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
+                android:id="@+id/textViewRegistration"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="5sp"
                 android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
                 android:text="@string/textViewReg"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:fontFamily="@font/roboto_medium"/>
+                android:textSize="18sp" />
 
         </LinearLayout>
 
