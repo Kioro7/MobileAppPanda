@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegistrationActivity"
     android:background="@color/primary"
     android:theme="@style/Theme.MobileAppPanda">
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/secondary"
         android:layout_marginHorizontal="30sp"
-        android:layout_marginTop="60sp"
+        android:layout_marginTop="100sp"
         app:cardCornerRadius="15sp">
 
         <LinearLayout
@@ -32,21 +32,22 @@
                 android:text="@string/regText1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <View
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="3sp"
-                android:background="@color/black"/>
+                android:background="@color/black"
+                tools:ignore="SmallSp" />
 
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="30sp"
                 android:layout_marginBottom="10sp"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="20sp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/text2"
                 android:textColor="@color/black"
@@ -56,11 +57,11 @@
                 android:id="@+id/text2Form"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20sp"
+                android:layout_marginBottom="10sp"
                 android:background="@color/secondary"
                 app:cardCornerRadius="10sp"
                 app:cardBackgroundColor="@color/textField"
-                android:layout_marginHorizontal="30sp">
+                android:layout_marginHorizontal="20sp">
 
                 <EditText
                     android:id="@+id/editTextTextEmailAddress"
@@ -73,7 +74,8 @@
                     android:textColor="@color/textInField"
                     android:inputType="textEmailAddress"
                     android:hint="@string/hintText2"
-                    android:background="@null"/>
+                    android:background="@null"
+                    android:autofillHints="" />
 
             </androidx.cardview.widget.CardView>
 
@@ -82,8 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="20sp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/text3"
                 android:textColor="@color/black"
@@ -96,8 +97,8 @@
                 android:background="@color/secondary"
                 app:cardCornerRadius="10sp"
                 app:cardBackgroundColor="@color/textField"
-                android:layout_marginHorizontal="30sp"
-                android:layout_marginBottom="20sp">
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginBottom="10sp">
 
                 <EditText
                     android:id="@+id/editTextTextPassword"
@@ -110,7 +111,8 @@
                     android:textColor="@color/textInField"
                     android:inputType="textPassword"
                     android:hint="@string/hintText3"
-                    android:background="@null"/>
+                    android:background="@null"
+                    android:autofillHints="" />
 
             </androidx.cardview.widget.CardView>
 
@@ -119,8 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="20sp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/regText2"
                 android:textColor="@color/black"
@@ -133,7 +134,7 @@
                 android:background="@color/secondary"
                 app:cardCornerRadius="10sp"
                 app:cardBackgroundColor="@color/textField"
-                android:layout_marginHorizontal="30sp">
+                android:layout_marginHorizontal="20sp">
 
                 <EditText
                     android:id="@+id/editTextTextPassword1"
@@ -146,24 +147,25 @@
                     android:textColor="@color/textInField"
                     android:inputType="textPassword"
                     android:hint="@string/hintText3"
-                    android:background="@null"/>
+                    android:background="@null"
+                    android:autofillHints="" />
 
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnRegistrationApp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/regBtnEnter"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/primary"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="30sp"
                 android:layout_gravity="center"
-                android:layout_marginHorizontal="70sp"
+                android:layout_marginHorizontal="40sp"
                 android:textSize="18sp"/>
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5sp"
@@ -172,7 +174,7 @@
                 android:text="@string/regTextViewReg"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/roboto_medium"/>
 
         </LinearLayout>
