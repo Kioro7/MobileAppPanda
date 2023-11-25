@@ -157,7 +157,8 @@
             android:text="@string/homeText3"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:focusable="true" />
 
         <TextView
             android:id="@+id/textView6"
@@ -177,7 +178,8 @@
             android:layout_height="150sp"
             android:layout_marginHorizontal="20sp"
             android:layout_marginTop="20sp"
-            android:src="@drawable/tarif">
+            android:src="@drawable/tarif"
+            android:contentDescription="@string/homeImageDescr">
 
         </ImageView>
 

@@ -142,4 +142,5 @@
     <string name="dialog_exit_text">Вы уверены что хотитет выйти?</string>
     <string name="dialog_exit_ok">Да</string>
     <string name="dialog_exit_cancel">Нет</string>
+    <string name="homeImageDescr">Множество бесплатных услуг</string>
 </resources>

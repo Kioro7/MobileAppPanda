@@ -2,12 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tariff_control"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondary"
     android:theme="@style/Theme.MobileAppPanda"
-    tools:context=".ui.tariffPlans.TariffPlansFragment"
-    android:id="@+id/tariff_control">
+    tools:context=".ui.tariffPlans.TariffPlansFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,13 +86,129 @@
             android:textColor="@color/white"
             android:textSize="18sp" />
 
-        <LinearLayout
-            android:id="@+id/my_tariff"
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tariff_layout1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.MobileAppPanda">
 
-        </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                app:cardCornerRadius="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/primary"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="8sp"
+                        android:text="@string/dialog_tariff1_text1"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="@string/dialog_tariff1_text2"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15sp"
+                            android:layout_marginTop="10sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/dialog_tariff1_text3"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15sp"
+                            android:layout_marginTop="10sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/dialog_tariff1_text4"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15sp"
+                            android:layout_marginTop="10sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/dialog_tariff1_text5"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15sp"
+                            android:layout_marginTop="10sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/dialog_tariff1_text6"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15sp"
+                            android:layout_marginTop="10sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/dialog_tariff1_text7"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20sp"
+                            android:background="@color/primary"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="8sp"
+                            android:text="Следующая оплата 01.12.2023"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
 
     </LinearLayout>
 </RelativeLayout>
