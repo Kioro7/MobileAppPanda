@@ -1,6 +1,10 @@
 package com.example.mobileapppanda
 
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -11,10 +15,12 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.mobileapppanda.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    private lateinit var batteryLevelReceiver: MonitoringBroadcastReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,11 +53,32 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu_toolbar, menu)
+
+        val iconBatteryItem = menu?.findItem(R.id.iconButtery)
+        iconBatteryItem?.setOnMenuItemClickListener {
+            batteryLevelReceiver = MonitoringBroadcastReceiver()
+
+            val filter = IntentFilter(Intent.ACTION_BATTERY_CHANGED)
+            registerReceiver(batteryLevelReceiver, filter)
+
+            true
+        }
+        return true
+    }
+
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         val curFragment = supportFragmentManager.findFragmentByTag("TariffPlans")
         if (curFragment != null && curFragment.isVisible)
             supportFragmentManager.beginTransaction().remove(curFragment).commit()
         else super.onBackPressed()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(batteryLevelReceiver)
     }
 }

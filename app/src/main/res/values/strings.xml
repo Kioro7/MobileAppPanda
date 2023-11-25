@@ -21,7 +21,7 @@
     <!-- Текстовые поля главного окна -->
     <string name="homeText1">Оператор связи &quot;Панда&quot; - это</string>
     <string name="homeText2">Выгодные тарифы</string>
-    <string name="homeText3">Еще...</string>
+    <string name="homeText3">Еще…</string>
     <string name="homeText4">Множество бесплатных услуг</string>
     <string name="homeText5">Поддержка каждого клиента связи</string>
     <string name="homeText6">Тариф "Все или ничего"</string>
@@ -139,4 +139,7 @@
     <string name="dialog_tariff5_text6">-100 сообщений</string>
     <string name="dialog_tariff5_btn1">Купить всего за 750 &#8381;/мес.</string>
     <string name="dialog_form_btn_save">Сохранить данные</string>
+    <string name="dialog_exit_text">Вы уверены что хотитет выйти?</string>
+    <string name="dialog_exit_ok">Да</string>
+    <string name="dialog_exit_cancel">Нет</string>
 </resources>
