@@ -12,8 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAppPanda"
         tools:targetApi="31">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".RegistrationActivity"/>
+        <receiver
+            android:name=".MonitoringBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegistrationActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"

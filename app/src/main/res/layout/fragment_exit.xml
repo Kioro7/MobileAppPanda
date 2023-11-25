@@ -6,9 +6,4 @@
     tools:context=".ui.exit.ExitFragment"
     android:id="@+id/exit">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
-
 </FrameLayout>

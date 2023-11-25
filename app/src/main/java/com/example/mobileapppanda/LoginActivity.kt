@@ -1,11 +1,11 @@
 package com.example.mobileapppanda
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,11 @@ class LoginActivity : AppCompatActivity() {
             val editTextEmail: EditText = findViewById(R.id.editTextEmailAddress)
             val editTextPassword: EditText = findViewById(R.id.editTextPassword)
 
-            if (AuthUtil.loginValidation(editTextEmail.text.toString(), editTextPassword.text.toString())) {
+            if (AuthUtil.loginValidation(
+                    editTextEmail.text.toString(),
+                    editTextPassword.text.toString()
+                )
+            ) {
                 val intent = Intent(this@LoginActivity, MainActivity::class.java)
                 startActivity(intent)
             }
@@ -28,13 +32,12 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this@LoginActivity, RegistrationActivity::class.java)
             startActivity(intent)
         }
-
     }
+}
 
-    object AuthUtil {
-        internal fun loginValidation(email: String, password: String): Boolean {
-            // Проверяем, соответствуют ли введенные данные заданным значениям
-            return email == "ilzam@mail.ru" && password == "Aa123456!"
-        }
+object AuthUtil {
+    internal fun loginValidation(email: String, password: String): Boolean {
+        // Проверяем, соответствуют ли введенные данные заданным значениям
+        return email == "ilzam@mail.ru" && password == "Aa123456!"
     }
 }
