@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity"
     android:background="@color/primary"
-    android:theme="@style/Theme.MobileAppPanda">
+    android:theme="@style/Theme.MobileAppPanda"
+    android:id="@+id/idRegistration">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/form"

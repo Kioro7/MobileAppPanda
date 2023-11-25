@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
             val editTextEmail: EditText = findViewById(R.id.editTextEmailAddress)
             val editTextPassword: EditText = findViewById(R.id.editTextPassword)
 
-            if (editTextEmail.text.toString() == "ilzam@mail.ru" && editTextPassword.text.toString() == "Aa123456!") {
+            if (AuthUtil.loginValidation(editTextEmail.text.toString(), editTextPassword.text.toString())) {
                 val intent = Intent(this@LoginActivity, MainActivity::class.java)
                 startActivity(intent)
             }
@@ -29,5 +29,12 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    object AuthUtil {
+        internal fun loginValidation(email: String, password: String): Boolean {
+            // Проверяем, соответствуют ли введенные данные заданным значениям
+            return email == "ilzam@mail.ru" && password == "Aa123456!"
+        }
     }
 }

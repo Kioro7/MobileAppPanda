@@ -138,4 +138,5 @@
     <string name="dialog_tariff5_text5">-20ГБ мобильного интернета</string>
     <string name="dialog_tariff5_text6">-100 сообщений</string>
     <string name="dialog_tariff5_btn1">Купить всего за 750 &#8381;/мес.</string>
+    <string name="dialog_form_btn_save">Сохранить данные</string>
 </resources>

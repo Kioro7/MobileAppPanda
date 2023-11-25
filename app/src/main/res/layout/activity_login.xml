@@ -74,7 +74,6 @@
                 app:cardCornerRadius="10sp">
 
                 <EditText
-                    android:text="ilzam@mail.ru"
                     android:id="@+id/editTextEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -85,8 +84,10 @@
                     android:hint="@string/hintText2"
                     android:inputType="textEmailAddress"
                     android:padding="8sp"
+                    android:text=""
                     android:textColor="@color/textInField"
                     android:textSize="18sp" />
+<!--                ilzam@mail.ru-->
 
             </androidx.cardview.widget.CardView>
 
@@ -112,7 +113,6 @@
                 app:cardCornerRadius="10sp">
 
                 <EditText
-                    android:text="Aa123456!"
                     android:id="@+id/editTextPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,8 +123,10 @@
                     android:hint="@string/hintText3"
                     android:inputType="textPassword"
                     android:padding="8sp"
+                    android:text=""
                     android:textColor="@color/textInField"
                     android:textSize="18sp" />
+<!--                Aa123456!-->
 
             </androidx.cardview.widget.CardView>
 
